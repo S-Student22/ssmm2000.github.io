@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<head>
+  <title> Sheet 3  </title>
+  <meta charset="utf_8">
+</head>
+<body>
+<form action="page2.html" target="top" method="post">
+    <fieldset>
+      <legend>Personal infromation </legend>
+
+      <label for="fname">First name:</label><br>
+      <input type="text" id="fname" name="fname"  required><br>
+
+      <label for="lname">Last name:</label><br>
+      <input type="text" id="lname" name="lname" maxlength="6" required ><br> 
+
+      <label for="ldate">Date of birth:</label><br>
+      <input type="date" id="bdate" name="bdate" max="2003-01-01" ><br> 
+
+      <label for="lphone">Phone:</label><br>
+      <input type="text" id="pPhone" name="pPhone"   autocomplete="off" ><br> 
+      <label for="lemail">Email:</label><br>
+      <input type="email" id="pemail" name="pemail"  autocomplete="off" ><br> 
+
+      <label for="doyou">Do you hav " توكلنا - تباعد  - تطمن" Apps in your phone:</label>
+      
+      <input type="radio" id="yes" name="doyou" value="YES" required>
+      <label for="lemail">YES  </label>
+
+     
+      <input type="radio" id="no" name="doyou" value="NO" required>
+      <label for="lemail">NO  </label><br>
+    
+    </fieldset>
+
+
+
+    <fieldset>
+        <legend>Class infromation </legend>
+        <label >choos class  </label>
+        <input list="class">
+        <datalist id="class">
+          <option value="204IT: web programming">
+          <option value="201cs:programming1">
+          <option value="202cs:programming2">
+          <option value="412 Cs: Computer ethic">
+          
+        </datalist>
+            <br> 
+        <label for="message">please explain why you need to attend lab   </label><br>
+        <textarea name="message" rows="10" cols="25">
+        </textarea>
+
+    </fieldset>
+
+    <fieldset>
+        <legend>Health infromation </legend>
+        <label >How helathly do you fell in general ?  </label><br>
+        0 <input type="range" id="ihelth" name="ihelth"  min="0" max="10" >10<br> 
+
+        <label >Check the symptoms that you have exeperienced tn the PAST Week:  </label><br>
+        <input type="checkbox" id="symptoms" name="symptoms" value="Fever">
+        <label for="symptoms"> Fever/Chills</label><br>
+
+        <input type="checkbox" id="symptoms2" name="symptoms2" value="Headaches">
+        <label for="symptoms"> Headaches</label><br>
+
+        <input type="checkbox" id="symptoms3" name="symptoms3" value="Coughing">
+        <label for="symptoms"> Coughing</label><br>
+
+        <input type="checkbox" id="symptoms4" name="symptoms4" value="Shortness">
+        <label for="symptoms"> Shortness of breath</label><br>
+
+        <input type="checkbox" id="symptoms5" name="symptoms5" value="Recent_loss">
+        <label for="symptoms"> Recent loss of senes of smell or tast </label>
+
+
+    </fieldset>
+<br> <br> <br>
+    <input type="submit" value="Submit">
+  </form>
+</body>
+</html>

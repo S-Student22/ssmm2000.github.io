@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang= "en">
+    <haed>
+        <meta charset="UTF-8"> 
+        <title>CV form</title>
+    </haed>
+    <body>
+        <h1>CV FORM</h1>
+<form method="Get" action = "index.html" target = "_blank" autocomplete="off">
+    <!--هذا رابط relative ف م يكتب الwww وهذي الاشياء-->
+    
+    <fieldset>
+        <legend>Personal Inforamtion</legend>
+<label for = "name ">Name :</label> <br>
+<input type = "text" id = "name" name = "name">
+
+<br><br>
+
+<label> Gender :  </label>
+<input type = "radio"  id = "male" name = "gender" value = "male">
+<label for = "mele">male </label>
+
+<input type = "radio"  id = "female" name = "gender" value= "female">
+<label for = "female">female </label>
+
+<br><br>
+
+<label for ="tel">Enter a phone number :</label><br><br>
+<input type = "tel" id = "tel" name = "phone number" pattern="[0-9]{3}.[0-9]{2}.[0-9]{3}" placeholder="555-55-555"> <label> format 555-55-555 </label><br><br>
+<!--url type-->
+<label for ="linkden">Your linkden page :</label>
+<input type ="url" id = "linkden" name="wpage">
+<label for ="email">Email :</label>
+<input type ="email" id = "email" name="e">
+
+<br><br>
+    </fieldset>
+
+<br>                                                               <!--هنا ادخلنا اعلى عمر واقل عمر مسموح فيه-->
+
+<label for ="ex">   years of experience (between 3 and 10): </label> 
+<input  type = "number" id = "ex" name = "ex" min = "3" max = "10">
+
+<br><br>                         <!--استخدمنا رانج لاننا نبغى يكون عندناشريط يمكن تحريكه لاختيار قيمة عددية.-->   
+
+<label for=" range"> expected salary</label> 
+4000
+<input type="range" id="range" name="range" min="4000" max="10000"step="0.01" > 
+10000
+
+<br><br>                                                         <!--نختار اللغه الي نبغى من نوع شك بوكس عربي وانقليزي-->
+
+<label>language:</label> <br>
+<input type="checkbox" id="Arabci" name="Arabci">
+<label for ="Arabci">  Arabci   </label>
+<br>                                                            
+<input type ="checkbox" id="English" name="English" >
+<label for="English"> English </label>
+
+<br><br>                                                         <!--هنا أختار الملف فنستخدم تايب من نوع فايل-->
+
+<label for ="file"> Uplaod your CV :</label>
+<input type="file" id="file" name="file"> 
+
+<br><br>                                                         <!--هنا اختيار الاسبوع الي حابين نبدأ فيه-->
+
+<label for="week">The nearest week you can start work </label>
+<input type="week" id="week" name="week" >
+
+<br><br>                                                         <!--هنا اختيار الشهر الي نبغاه-->
+
+<label for="month of week">The nearest month you can start work   </label>
+<input type="month" id="month of week" name="week">
+
+
+<br><br>                                                          <!--هنا نختار الوقت-->
+
+<label for="mytime">the best time to work  </label>
+<input type="time" id="mytime" name="mytime">
+
+<br><br>                                                           <!--هنا نقدر نكنب الي نبغاه من نوع تكست -->
+                                                              <!--هذي اسمها drop down list-->
+
+    <!--drop down with ...
+    <input list="mojors" name="mo"> 
+     -->
+    
+<br><br>
+
+<label for="">why you want to work with us</label><br>             <!--هنا نقدر نكنب الي نبغاه في اكثر من سطر-->
+<textarea rows="5" cols="130"> </textarea>
+
+<br>
+
+<input type ="submit" value = "send">
+
+<input type ="reset" value = "reset">
+</form>
+    </body>
