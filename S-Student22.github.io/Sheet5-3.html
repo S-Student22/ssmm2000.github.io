@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Sheet5-3</title>
+        <meta charset="UTF-8">
+    </head>
+    <script>
+        function BimCalculate(){
+            const time = new Date().getHours();
+         var Weight=document.getElementById('Weight').value ;
+         var height=document.getElementById('height').value ;
+         var height_cm=height/100;
+         var BIM=Weight/(height_cm*height_cm)
+        document.getElementById("BIM_Res").innerHTML = " Your BIM : "+BIM;
+        //==
+        let Bim_mean;
+        if(BIM<18.5)
+                Bim_mean= "Underweghtinh";
+        else if (BIM>=18.5 && BIM<24.9)
+                Bim_mean= "Helthly weight ";
+        else if (BIM>=25 && BIM<29.9)
+                Bim_mean= "Overwight ";
+        document.getElementById("BIM_Rean").innerHTML ="This Mean : Your BIM :"+ Bim_mean;       
+
+        }
+       
+        </script>
+<body>
+    <h1> BMI Caluclator Using Javascript </h1>
+    <label for="weght">Your Weight (Kg):</label>
+    <input type="number" id="Weight" n   autocomplete="off" ><br> <br> 
+    <label for="height">Your Height (Kg):</label>
+    <input type="number" id="height" n   autocomplete="off" ><br> <br> 
+    <button onclick="BimCalculate()" >  Caluclate BMI</button>
+<p id="BIM_Res"></p>
+<p id="BIM_Rean"></p>
+</body>
+</html>

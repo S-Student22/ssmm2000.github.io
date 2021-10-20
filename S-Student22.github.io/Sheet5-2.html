@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Sheet5-2</title>
+    <meta charset="UTF-8">
+</head>
+    <script>
+        function setGreeting(){
+            const time = new Date().getHours();
+        let greeting;
+        if (time >0 &&time<12) {
+          greeting =document.getElementById('txt_name').value + "  Good morning";
+        } else if (time >=12 &&time<24) {
+          greeting =document.getElementById('txt_name').value + "  Good Afternon";
+        }
+        document.getElementById("greet").innerHTML = greeting;
+        }
+       
+        </script>
+<body>
+    <input placeholder="Write Name Here" type="text"   id="txt_name" />
+    <button onclick="setGreeting()" > Show greeting </button>
+<p id="greet"></p>
+</body>
+</html>
